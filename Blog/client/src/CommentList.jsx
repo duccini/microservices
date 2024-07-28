@@ -1,20 +1,20 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+// import { useState, useEffect } from "react";
+// import axios from "axios";
 
-export default function CommentList({ postId }) {
-  const [comments, setComments] = useState({});
+export default function CommentList({ comments }) {
+  // const [comments, setComments] = useState({});
 
-  const fechData = async () => {
-    const res = await axios.get(
-      `http://localhost:4001/posts/${postId}/comments`
-    );
+  // const fechData = async () => {
+  //   const res = await axios.get(
+  //     `http://localhost:4001/posts/${postId}/comments`
+  //   );
 
-    setComments(res.data);
-  };
+  //   setComments(res.data);
+  // };
 
-  useEffect(() => {
-    fechData();
-  }, []);
+  // useEffect(() => {
+  //   fechData();
+  // }, []);
 
   // The "TypeError: map is not a function" occurs when we call the map() method on
   // a value that is not an array.
